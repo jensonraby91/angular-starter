@@ -1,0 +1,23 @@
+html {
+  height: 100%;
+  scroll-padding-top: calc(#{$navbar-height} - 1px);
+}
+
+// Content sections
+.content-section {
+  padding: 6rem 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-link.active {
+    color: $white;
+    background: $primary;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $white;
+      background: $primary;
+    }
+  }
+}
