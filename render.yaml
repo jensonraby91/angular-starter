@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: angular-app
+    env: node
+    buildCommand: npm install -g @angular/cli && npm install && npm run build --prod
+    startCommand: npx serve -s dist/angular-starter
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20.17.0  # Specify the desired Node.js version here
